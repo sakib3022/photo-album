@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo album using flexbox and relative position</title>
+    <style>
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .photo-frame {
+            width: 300px;
+            height: 168px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            position: absolute;
+            width: 300px;
+            display: none;
+            top: 0;
+            color: white;
+        }
+
+        .photo-detail h3 {
+            background-color: rgba(29, 12, 12, 0.253);
+            text-align: center;
+        }
+
+        .photo-detail p {
+            background-color: rgba(170, 155, 117, 0.437);
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.3) translate(50px);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Awesome photo album with tiger mama</h2>
+    <section>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>My tiger candid</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis obcaecati hic libero
+                        quod nulla beatae non commodi ea enim?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
